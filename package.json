@@ -4,13 +4,13 @@
   "description": "ManimCat - AI-powered mathematical animation generator",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
-    "dev:backend": "tsx watch src/server.ts",
-    "dev:frontend": "cd frontend && vite",
-    "build": "npm run build:frontend",
-    "build:backend": "tsc",
-    "build:frontend": "cd frontend && npm run build",
-    "start": "tsx src/server.ts",
+    "dev": "node init && concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:backend": "node init && tsx watch src/server.ts",
+    "dev:frontend": "node init && cd frontend && vite",
+    "build": "node init && npm run build:frontend",
+    "build:backend": "node init && tsc",
+    "build:frontend": "node init && cd frontend && npm run build",
+    "start": "node init && tsx src/server.ts",
     "test": "echo \"Tests coming soon\" && exit 0"
   },
   "dependencies": {
