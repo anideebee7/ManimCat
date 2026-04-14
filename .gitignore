@@ -12,8 +12,6 @@ dist/
 .motia/
 
 # Environment
-.env
-.env.local
 
 # Generated files
 public/videos/*
@@ -31,7 +29,6 @@ dump.rdb
 Thumbs.db
 
 # IDE
-.vscode/
 .idea/
 
 # Temp files
@@ -81,3 +78,4 @@ dist-tests/
 public/assets/
 public/index.html
 
+config.bat
